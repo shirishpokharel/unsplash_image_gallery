@@ -40,6 +40,9 @@ export default class App extends Component {
       count: this.state.count - 1,
     });
     if (this.state.count === 0) {
+       this.setState({
+        count: 10,
+      });
       clearInterval(this.counter);
       this.fetchImage();
     }
